@@ -1,31 +1,33 @@
-import { ref } from 'vue'
+import { ref , computed } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useCartStore = defineStore('cart', () => {
-  const productsInCart = []
+  const productsInCart = ref([])
   const priceTotal = ref(0)
+
+  const price = computed(() => priceTotal.value )
   
   // Obtiene el precio total de los productos en carrito 
-  const getPriceTotal = () => {
-    productsInCart.map(element => {
-      return priceTotal += element.priceTotal
+  function getPriceTotal() {
+    this.productsInCart.foreach(element => {
+      this.priceTotal += element.priceTotal
     });
   }
 
   // Agrega productos al carrito 
-  const addProductInCart = (product) => {
-    return productsInCart.push(product)
+  function addProductInCart(product) {
+    return this.productsInCart.push(product)
   }
 
   // Devuelve la cantidad de productos en el carrito 
-  const getSizeProductInCart = () => {
+  function getSizeProductInCart() {
     return productsInCart.length;
   }
 
   // Elimina un producto del carrito 
-  const removeProductInCart = (id) => {
+  function removeProductInCart(id) {
     console.log('remove')
   }
 
-  return { productsInCart, priceTotal , getPriceTotal , addProductInCart , removeProductInCart , getSizeProductInCart }
+  return { productsInCart, priceTotal , addProductInCart , removeProductInCart , getSizeProductInCart , getPriceTotal , price }
 })

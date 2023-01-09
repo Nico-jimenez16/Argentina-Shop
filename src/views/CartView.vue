@@ -7,10 +7,10 @@ import PurchaseDetail from '../components/pure/PurchaseDetail.vue'
 
 
 <template>
-    <div class="mt-24">
+    <div class="mt-16">
         <div class="w-full m-auto flex flex-col justify-center items-center p-4 mb-12">
-            <div class="w-full h-auto md:h-32 flex justify-between items-center border-b border-cyan-300 mb-8">
-                <h1 class="text-4xl font-bold">My Cart</h1>
+            <div class="w-full h-auto md:h-32 flex justify-between items-center border-b border-cyan-300 mb-4">
+                <h1 class="text-3xl font-bold">My Cart</h1>
                 <router-link to="/shop" class="text-white bg-cyan-300 p-4 rounded-xl">
                     Ir a Productos       
                 </router-link>

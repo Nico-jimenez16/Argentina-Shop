@@ -8,10 +8,10 @@ const { productsInCart , getSizeProductInCart } = useCartStore()
 
 
 <template>  
-    <div v-for="(obj, index) of productsInCart" :key="index" class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex justify-center items-center">
+    <div v-for="(obj, index) of productsInCart" :key="index" class="w-full md:w-1/2 lg:w-1/4 xl:w-1/4 flex justify-center items-center">
         <ProductCart 
                 :obj="obj"
-                :key="obj.id" 
+                :key="obj.id"
         />
     </div>
 </template>

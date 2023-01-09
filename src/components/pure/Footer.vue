@@ -1,6 +1,6 @@
 <template>
     <footer class='w-full flex justify-center items-center h-auto md:h-16 border-t'>
-            <div class="w-full h-full block flex justify-center md:justify-start items-center items-center py-4">
+            <div class="w-full h-full block flex justify-center md:justify-start items-center items-center py-2">
               <div class="w-full md:w-1/2 flex justify-center items-center">
                 <a href="mailto:jimeneznicolas520@gmail.com" target="_blank" rel="noreferrer" class="flex justify-start items-center mt-1 mr-2 cursor-pointer">
                   <img class="w-6 mr-2" src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="mail" />
@@ -17,7 +17,7 @@
                 </a>
               </div>
               <div class="hidden md:w-1/2 h-full md:flex justify-center items-center mt-4 pb-2 md:pt-2 md:mt-0">
-                <h1 class="text-xl font-bold">Tech: VueJs 3 - Vite - Pinia - TailwindCss </h1>
+                <h1 class="text-lg font-bold">Tech: VueJs 3 - Vite - Pinia - TailwindCss </h1>
               </div>
             </div>
         </footer>

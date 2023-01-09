@@ -17,7 +17,7 @@ const HandleLogin = () => {
 </script>
 
 <template>
-    <div class="login mt-24 h-screen">
+    <div class="login mt-16 h-screen">
         <div class="w-full flex justify-center items-center p-6">
             <form class="w-full flex flex-col justify-center items-center md:w-3/4 lg:w-3/5 border-2 rounded-xl">
                 <h2 class="text-2xl text-black my-4">Login de Usuario</h2>

@@ -4,7 +4,7 @@
 
 
 <template>
-    <div id="header" class="w-full fixed top-0 h-24 bg-black/60 z-50">
+    <div id="header" class="w-full fixed top-0 h-16 bg-black/60 z-50">
         <nav class="w-full h-full flex justify-start items-center px-4">
             <div class="w-1/2">
                 <router-link to="/">Home</router-link>
@@ -21,7 +21,7 @@
 <style scoped>
 
 a{
-    font-size: x-large;
+    font-size: 1.2rem;
     color: white;
     margin: 5px;
 }

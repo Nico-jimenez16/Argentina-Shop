@@ -1,7 +1,7 @@
 <script setup>
 import { useCartStore } from '../../store/cartStore.js'
 
-const { getPriceTotal } = useCartStore()
+const { price } = useCartStore()
 
 </script>
 
@@ -14,7 +14,7 @@ const { getPriceTotal } = useCartStore()
         <div class="w-full flex flex-col justify-center items-center">
             <div class="w-4/5 flex justify-between items-center p-4">
                 <h2 class="text-xl">Price</h2>
-                <h2>$ {{ getPriceTotal.toString }} </h2>
+                <h2>$ {{ price }} </h2>
             </div>
         </div>
         <div class="w-full flex flex-col justify-center items-center">
