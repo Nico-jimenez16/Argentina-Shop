@@ -12,7 +12,7 @@
                 <router-link to="/about">About me</router-link>
             </div>
             <div class="w-1/2 flex justify-end">
-                <router-link to="/cart" class="underline">Shopping Cart</router-link>
+                <router-link to="/cart" class="underline">Cart</router-link>
             </div>
         </nav>
     </div>

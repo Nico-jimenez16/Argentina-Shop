@@ -10,7 +10,7 @@ import Search from '../components/pure/Search.vue';
             <div class="w-5/6 h-auto md:h-48 flex justify-center items-center">
                 <div class="w-1/2">
                     <h1 class="text-5xl font-bold">Productos</h1>
-                    <h3 class="w-full">Compra tus Productos Aqui! La mejor tienda con la selección de productos más grande en Argentina.</h3>
+                    <h3 class="text-xl w-full">Compra tus Productos Aqui! La mejor tienda con la selección de productos más grande en Argentina.</h3>
                 </div>
                 <div class="w-1/2 flex justify-center items-center">
                     <Search/>
