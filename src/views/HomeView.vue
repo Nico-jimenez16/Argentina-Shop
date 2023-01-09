@@ -1,0 +1,17 @@
+<script setup>
+
+</script>
+
+
+<template>
+    <div class="w-full h-screen flex justify-center items-center relative">
+        <div class="w-full h-48 absolute flex flex-col justify-center items-center bg-black/30">
+            <h1 class="text-7xl font-bold text-white"> CAMPEONES DEL MUNDO </h1>
+            <p class="text-2xl text-white">Celebrá con la colección que ya es parte de nuestra historia.</p>
+            <router-link to="/shop">
+                <button class="text-black bg-white border border-white p-4 my-2 hover:text-cyan-600"> COMPRA AHORA <v-icon name="BiArrowRightShort" fill="black"/> </button>
+            </router-link>
+        </div>
+        <img class="w-full h-full" src="../assets/campeonesdelmundo.webp" alt="campeones del mundo">
+    </div>
+</template>
