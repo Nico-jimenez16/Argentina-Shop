@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 
 export const useCartStore = defineStore('cart', () => {
   const productsInCart = []
-  const priceTotal = 0
+  const priceTotal = ref(0)
   
   // Obtiene el precio total de los productos en carrito 
   const getPriceTotal = () => {
