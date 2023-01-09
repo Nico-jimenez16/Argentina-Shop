@@ -16,7 +16,7 @@ defineProps({
             </div>
         </router-link>
         <div class="w-full h-auto md:h-12 p-2">
-            <h2 class="text-lg">{{ obj.title }}</h2>
+            <h2>{{ obj.title }}</h2>
         </div>
     </div>
 </template>
