@@ -2,13 +2,13 @@ import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useCartStore = defineStore('cart', () => {
-  const productsInCart = ref([])
-  const priceTotal = ref(0)
+  const productsInCart = []
+  const priceTotal = 0
   
   // Obtiene el precio total de los productos en carrito 
   const getPriceTotal = () => {
     productsInCart.map(element => {
-      console.log(element)
+      return priceTotal += element.priceTotal
     });
   }
 
