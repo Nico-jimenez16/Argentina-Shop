@@ -16,7 +16,7 @@ import PurchaseDetail from '../components/pure/PurchaseDetail.vue'
                 </router-link>
             </div>
             <div class="w-full block md:flex justify-center items-center">
-                <div class="w-full md:w-2/3 flex flex-wrap justify-center items-center border-r border-cyan-500">
+                <div class="w-full md:w-2/3 flex flex-wrap justify-center items-center">
                     <IndexCartVue/>
                 </div>
                 <div class="w-full md:w-1/3 flex flex-wrap justify-center items-center">

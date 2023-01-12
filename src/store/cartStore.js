@@ -5,18 +5,15 @@ export const useCartStore = defineStore('cart', () => {
   const productsInCart = ref([])
   const priceTotal = ref(0)
 
-  const price = computed(() => priceTotal.value )
-  
-  // Obtiene el precio total de los productos en carrito 
-  // function getPriceTotal() {
-  //   this.productsInCart.foreach(element => {
-  //     this.priceTotal += element.priceTotal
-  //   });
-  // }
+  const priceFinal =  computed(() => priceTotal.value )
+
+  function increment(valor){
+    priceTotal.value += valor
+  }
 
   // Agrega productos al carrito 
   function addProductInCart(product) {
-    return this.productsInCart.push(product)
+    productsInCart.value.push(product)
   }
 
   // Devuelve la cantidad de productos en el carrito 
@@ -29,5 +26,5 @@ export const useCartStore = defineStore('cart', () => {
     console.log('remove')
   }
 
-  return { productsInCart, priceTotal , addProductInCart , removeProductInCart , getSizeProductInCart , price }
+  return { productsInCart, priceTotal , addProductInCart , removeProductInCart , getSizeProductInCart, priceFinal }
 })
