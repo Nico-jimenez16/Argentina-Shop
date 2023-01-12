@@ -15,12 +15,12 @@ const { addProductFavorite } = useFavoriteStore()
 
 <template>
     <div class="w-full h-full shadow-2xl bg-transparent text-black border-2 rounded-md mb-1">
-        <router-link class="relative h-32 md:h-40" to="/">
+        <a class="relative w-full h-32 md:h-40">
             <img :src="obj.image" class="w-full h-full" alt="argentina">
             <div class="absolute w-1/3 h-auto bottom-0 bg-white p-1 ml-2">
                 <h2>{{ obj.price }}</h2>
             </div>
-        </router-link>
+        </a>
         <div class="w-full h-auto lg:h-10 p-2">
             <h2 class="">{{ obj.title }}</h2>
         </div>
