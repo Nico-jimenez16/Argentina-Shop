@@ -1,7 +1,10 @@
 <script setup>
-import IndexCartVue from '../components/container/IndexCart.vue';
+import IndexCart from '../components/container/IndexCart.vue';
 import PurchaseDetail from '../components/pure/PurchaseDetail.vue'
 
+import { useCartStore } from '../store/cartStore'
+
+const { size } = useCartStore()
 
 </script>
 
@@ -16,8 +19,11 @@ import PurchaseDetail from '../components/pure/PurchaseDetail.vue'
                 </router-link>
             </div>
             <div class="w-full block md:flex justify-center items-center">
-                <div class="w-full md:w-2/3 flex flex-wrap justify-center items-center">
-                    <IndexCartVue/>
+                <div v-if="size === 0" class="w-full md:w-2/3 flex flex-wrap justify-center items-center">
+                    <h1 class="text-2xl"> Empty Shopping Cart! </h1>
+                </div>
+                <div v-else class="w-full md:w-2/3 flex flex-wrap justify-center items-center">
+                    <IndexCart/>
                 </div>
                 <div class="w-full md:w-1/3 flex flex-wrap justify-center items-center">
                     <PurchaseDetail/>

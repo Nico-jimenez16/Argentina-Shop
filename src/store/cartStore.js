@@ -6,9 +6,13 @@ export const useCartStore = defineStore('cart', () => {
   const priceTotal = ref(0)
 
   const priceFinal =  computed(() => priceTotal.value )
+  const size = computed(() => productsInCart.value.length )
 
-  function increment(valor){
-    priceTotal.value += valor
+  // Devuelve si un producto esta en el carrito 
+  function isInCart(id){
+    const response = productsInCart.value.find((product) => product.id === id )
+    if(response) return true 
+    return false
   }
 
   // Agrega productos al carrito 
@@ -16,15 +20,11 @@ export const useCartStore = defineStore('cart', () => {
     productsInCart.value.push(product)
   }
 
-  // Devuelve la cantidad de productos en el carrito 
-  function getSizeProductInCart() {
-    return productsInCart.length;
-  }
-
   // Elimina un producto del carrito 
   function removeProductInCart(id) {
-    console.log('remove')
+    const Indexproduct = productsInCart.value.findIndex((p) => p.id === id)
+    productsInCart.value.splice(Indexproduct , 1)
   }
 
-  return { productsInCart, priceTotal , addProductInCart , removeProductInCart , getSizeProductInCart, priceFinal }
+  return { productsInCart, priceTotal, addProductInCart, removeProductInCart, size, priceFinal, isInCart }
 })

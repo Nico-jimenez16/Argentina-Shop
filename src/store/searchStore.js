@@ -4,5 +4,9 @@ import { defineStore } from 'pinia'
 export const useSearchStore = defineStore('search', () => {
   const search = ref('')
 
-  return { search }
+  function searching(value){
+    search.value = value
+  }
+
+  return { search, searching }
 })

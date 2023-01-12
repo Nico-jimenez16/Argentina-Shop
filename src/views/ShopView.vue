@@ -6,7 +6,7 @@ import Search from '../components/pure/Search.vue';
 
 <template>
     <div class="mt-16">
-        <div class="flex flex-col justify-center items-center mb-12">
+        <div class="w-full flex flex-col justify-center items-center mb-12">
             <div class="w-5/6 h-auto md:h-48 block md:flex justify-center items-center">
                 <div class="w-full md:w-1/2 mt-4 md:mt-0">
                     <h1 class="text-4xl font-bold">Productos</h1>
