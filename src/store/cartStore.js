@@ -8,11 +8,11 @@ export const useCartStore = defineStore('cart', () => {
   const price = computed(() => priceTotal.value )
   
   // Obtiene el precio total de los productos en carrito 
-  function getPriceTotal() {
-    this.productsInCart.foreach(element => {
-      this.priceTotal += element.priceTotal
-    });
-  }
+  // function getPriceTotal() {
+  //   this.productsInCart.foreach(element => {
+  //     this.priceTotal += element.priceTotal
+  //   });
+  // }
 
   // Agrega productos al carrito 
   function addProductInCart(product) {
@@ -29,5 +29,5 @@ export const useCartStore = defineStore('cart', () => {
     console.log('remove')
   }
 
-  return { productsInCart, priceTotal , addProductInCart , removeProductInCart , getSizeProductInCart , getPriceTotal , price }
+  return { productsInCart, priceTotal , addProductInCart , removeProductInCart , getSizeProductInCart , price }
 })
