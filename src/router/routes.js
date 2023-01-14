@@ -19,6 +19,10 @@ export default createRouter({
       path: '/cart',
       component: () => import('../views/CartView.vue'),
     },
+    {
+      path: '/favorite',
+      component: () => import('../views/FavoriteProductView.vue'),
+    },
     { 
       path: '/:pathMatch(.*)',
       component: () => import('../components/pure/NotFound.vue')
