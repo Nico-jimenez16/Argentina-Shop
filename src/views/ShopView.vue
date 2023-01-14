@@ -77,7 +77,7 @@ const products = [
                     <Search/>
                 </div>
             </div>
-            <div class="w-5/6 flex flex-wrap justify-center items-center">
+            <div class="w-5/6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-1">
                 <IndexProducts 
                     :products="products" 
                 />

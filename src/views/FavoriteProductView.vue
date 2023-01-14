@@ -28,7 +28,7 @@ const { size, favoriteProducts } = useFavoriteStore()
                 <div v-if="size === 0" class="w-full md:w-2/3 flex flex-wrap justify-center items-center">
                     <h1 class="text-2xl"> No favorite products! </h1>
                 </div>
-                <div v-else class="w-full flex flex-wrap justify-center items-center">
+                <div v-else class="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-1">
                     <IndexProducts
                         :products="favoriteProducts"
                     />

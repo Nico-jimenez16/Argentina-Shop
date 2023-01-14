@@ -12,9 +12,16 @@ export const useFavoriteStore = defineStore('favorite', () => {
     return false
   }
 
+  // Agrega productos a los favoritos 
   function addProductFavorite(product){
     favoriteProducts.value.push(product)
   }
 
-  return { favoriteProducts, addProductFavorite , isFavorite, size }
+  // Elimina un producto de los favoritos 
+  function removeProductInFavorite(id) {
+    const Indexproduct = favoriteProducts.value.findIndex((p) => p.id === id)
+    favoriteProducts.value.splice(Indexproduct , 1)
+  }
+
+  return { favoriteProducts, addProductFavorite, removeProductInFavorite, isFavorite, size }
 })
