@@ -15,7 +15,7 @@ const { size } = useCartStore()
             <div class="w-full h-24 md:h-32 flex justify-between items-center border-b border-cyan-300 mb-4">
                 <h1 class="text-3xl font-bold">My Cart</h1>
                 <router-link to="/shop" class="md:w-60 text-center text-white bg-cyan-300 p-4 rounded-xl">
-                    Ir a Productos       
+                    Go to Products       
                 </router-link>
             </div>
             <div class="w-full block md:flex justify-center items-center">
