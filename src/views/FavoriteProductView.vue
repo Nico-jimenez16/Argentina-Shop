@@ -16,10 +16,10 @@ const { size, favoriteProducts } = useFavoriteStore()
                     <h1 class="text-3xl font-bold">Favorite Products</h1>
                 </div>
                 <div class="w-1/2 flex flex-col md:flex-row justify-end items-center">
-                    <router-link to="/shop" class="text-center text-white w-full md:w-60 bg-cyan-300 p-2 md:p-4 rounded-xl md:mr-2 border-b">
+                    <router-link to="/shop" class="text-center text-black uppercase w-full md:w-60 bg-cyan-300 p-2 md:p-4 rounded-xl md:mr-2 border-b">
                         Go to Products       
                     </router-link>
-                    <router-link to="/cart" class="text-center text-white w-full md:w-60 bg-cyan-300 p-2 md:p-4 rounded-xl">
+                    <router-link to="/cart" class="text-center text-black uppercase w-full md:w-60 bg-cyan-300 p-2 md:p-4 rounded-xl">
                         Go to Cart    
                     </router-link>
                 </div>

@@ -8,9 +8,9 @@ import { Icon } from '@iconify/vue';
     <div id="header" class="w-full fixed top-0 h-16 bg-black/60 z-50">
         <nav class="w-full h-full flex justify-start items-center px-2 md:px-4">
             <div class="w-2/3 md:w-1/2">
-                <router-link class="mx-1" to="/">Home</router-link>
-                <router-link class="mx-2" to="/shop">Shop</router-link>
-                <router-link class="mx-1" to="/about">About me</router-link>
+                <router-link class="mx-1 uppercase" to="/">Home</router-link>
+                <router-link class="mx-2 uppercase" to="/shop">Shop</router-link>
+                <router-link class="mx-1 uppercase" to="/about">About me</router-link>
             </div>
             <div class="w-1/3 md:w-1/2 flex justify-end items-center">
                 <router-link to="/favorite" class="flex">
@@ -29,6 +29,9 @@ import { Icon } from '@iconify/vue';
 a{
     font-size: 1.2rem;
     color: white;
+}
+.router-link-exact-active{
+    text-decoration: underline;
 }
 
 </style>

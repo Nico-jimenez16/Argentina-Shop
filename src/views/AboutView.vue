@@ -35,8 +35,8 @@ const handleObjetivos = () => {
             <div class="w-full h-auto md:w-4/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:m-4 my-4 px-2">
                 <div>
                     <div @click="handleIng" class="w-full h-12 flex justify-center items-center border border-cyan-500 rounded-xl cursor-pointer">
-                        <p>Ingenieria en Sistemas de Informacion</p>
-                        <Icon class="w-8 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
+                        <p class="w-5/6 text-center">Ingenieria en Sistemas de Informacion</p>
+                        <Icon class="w-1/6 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
                     </div>
                     <div v-if="openIngenieria" class="p-2">
                         <p>
@@ -46,34 +46,35 @@ const handleObjetivos = () => {
                 </div>
                 <div>
                     <div @click="handleLeadbox" class="w-full h-12 flex justify-center items-center border border-cyan-500 rounded-xl cursor-pointer">
-                        <p>LeadboxHq</p>
-                        <Icon class="w-8 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
+                        <p class="w-5/6 text-center">LeadboxHq</p>
+                        <Icon class="w-1/6 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
                     </div>
                     <div v-if="openLeadbox" class="p-2">
                         <p>
-                            LeadboxHq es una empresa canadiense de la industria automotriz. El puesto que me desempeñe es desarrolador frontend en el area de soporte, construyendo páginas y resolviendo los pedidos de los clientes.
+                            LeadboxHq es una empresa canadiense de la industria automotriz. El puesto quee me desempeñe es desarrolador frontend en el area de soporte, construyendo páginas y resolviendo los pedidos de los clientes.
                         </p>
                     </div>
                 </div>
                 <div>
                     <div @click="handleCreativos" class="w-full h-12 flex justify-center items-center border border-cyan-500 rounded-xl cursor-pointer">
-                        <p>Creativos Digitales</p>
-                        <Icon class="w-8 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
+                        <p class="w-5/6 text-center">Creativos Digitales</p>
+                        <Icon class="w-1/6 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
                     </div>
                     <div v-if="openCreativosD" class="p-2">
                         <p>
-                            Actualmente trabajo en Creativos Digitales como profesor de programacion para chicos.             
+                            Creativos Digitales es un empresa de educacion, donde enseñamos programacion a niños a traves de videos juegos y en donde actuamente trabajo como profesor de programacion.             
                         </p>
                     </div>
                 </div>
                 <div>
                     <div @click="handleObjetivos" class="w-full h-12 flex justify-center items-center border border-cyan-500 rounded-xl cursor-pointer">
-                        <p>Objetivos</p>
-                        <Icon class="w-8 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
+                        <p class="w-5/6 text-center">Objetivos</p>
+                        <Icon class="w-1/6 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
                     </div>
                     <div v-if="openObjetivos" class="p-2">
                         <p>
-                            Actualmente trabajo en Creativos Digitales como profesor de programacion para chicos.             
+                            Actuamente me encuentro profundizando mis conocimientos en lo que hace al desarrollo Frontend y mi objetivo es seguir aprendiendo y enfrentarme a nuevos desafios
+                            y poder comandar grupos de trabajos, desarrollar arquitecturas frontend. Ademas, recibirme de ingeniero en sistemas e involucrarme en lo que es el desarrollo FullStack.              
                         </p>
                     </div>
                 </div>

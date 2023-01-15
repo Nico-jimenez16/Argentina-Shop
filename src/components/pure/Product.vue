@@ -25,7 +25,7 @@ const { addProductFavorite, isFavorite } = useFavoriteStore()
             <h2 class="">{{ obj.title }}</h2>
         </div>
         <div class="w-full flex h-10">
-            <div v-if="isInCart(obj.id)" class="w-1/2 flex justify-center items-center text-white bg-violet-400 border-r border-white">
+            <div v-if="isInCart(obj.id)" class="w-1/2 flex justify-center items-center text-white bg-violet-500 border-r border-white">
                 <h2 class="uppercase p-1">In cart</h2>
             </div>
             <div v-else @click="addProductInCart(obj)" class="w-1/2 flex justify-center items-center bg-cyan-400 cursor-pointer">
