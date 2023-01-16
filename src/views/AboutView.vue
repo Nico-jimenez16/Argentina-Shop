@@ -24,7 +24,6 @@ const handleObjetivos = () => {
 
 </script>
 
-
 <template>
     <div class="mt-16">
         <div class="w-full h-auto block md:flex justify-center items-center">
@@ -34,7 +33,7 @@ const handleObjetivos = () => {
             </div>
             <div class="w-full h-auto md:w-4/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:m-4 my-4 px-2">
                 <div>
-                    <div @click="handleIng" class="w-full h-12 flex justify-center items-center border border-cyan-500 rounded-xl cursor-pointer">
+                    <div @click="handleIng" class="w-full bg-gray-50 h-12 md:h-16 flex justify-center items-center border border-cyan-500 rounded-xl rounded-tl-none cursor-pointer">
                         <p class="w-5/6 text-center">Ingenieria en Sistemas de Informacion</p>
                         <Icon class="w-1/6 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
                     </div>
@@ -45,7 +44,7 @@ const handleObjetivos = () => {
                     </div>
                 </div>
                 <div>
-                    <div @click="handleLeadbox" class="w-full h-12 flex justify-center items-center border border-cyan-500 rounded-xl cursor-pointer">
+                    <div @click="handleLeadbox" class="w-full bg-gray-50 h-12 md:h-16 flex justify-center items-center border border-cyan-500 rounded-xl rounded-tl-none cursor-pointer">
                         <p class="w-5/6 text-center">LeadboxHq</p>
                         <Icon class="w-1/6 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
                     </div>
@@ -56,7 +55,7 @@ const handleObjetivos = () => {
                     </div>
                 </div>
                 <div>
-                    <div @click="handleCreativos" class="w-full h-12 flex justify-center items-center border border-cyan-500 rounded-xl cursor-pointer">
+                    <div @click="handleCreativos" class="w-full bg-gray-50 h-12 md:h-16 flex justify-center items-center border border-cyan-500 rounded-xl rounded-tl-none cursor-pointer">
                         <p class="w-5/6 text-center">Creativos Digitales</p>
                         <Icon class="w-1/6 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
                     </div>
@@ -67,7 +66,7 @@ const handleObjetivos = () => {
                     </div>
                 </div>
                 <div>
-                    <div @click="handleObjetivos" class="w-full h-12 flex justify-center items-center border border-cyan-500 rounded-xl cursor-pointer">
+                    <div @click="handleObjetivos" class="w-full bg-gray-50 h-12 md:h-16 flex justify-center items-center border border-cyan-500 rounded-xl rounded-tl-none cursor-pointer">
                         <p class="w-5/6 text-center">Objetivos</p>
                         <Icon class="w-1/6 h-8 mt-1" icon="material-symbols:keyboard-arrow-down" />
                     </div>
