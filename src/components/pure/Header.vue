@@ -1,6 +1,7 @@
 <script setup>
 import { Icon } from '@iconify/vue';
 
+
 </script>
 
 
@@ -14,10 +15,10 @@ import { Icon } from '@iconify/vue';
             </div>
             <div class="w-1/3 md:w-1/2 flex justify-end items-center">
                 <router-link to="/favorite" class="flex">
-                    <Icon class="w-8 h-8 mx-1" icon="ph:heart" style="color: white;" />
+                    <Icon class="w-8 h-8 mx-1" icon="ph:heart" />
                 </router-link>
                 <router-link to="/cart" class="flex">
-                    <Icon class="w-8 h-8 mx-1" icon="ph:shopping-cart-simple-thin" style="color: white" />
+                    <Icon class="w-8 h-8 mx-1" icon="ph:shopping-cart-simple-thin" />
                 </router-link>
             </div>
         </nav>

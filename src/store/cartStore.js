@@ -5,6 +5,12 @@ export const useCartStore = defineStore('cart', () => {
   const productsInCart = ref([])
   const priceTotal = ref(0)
 
+  function total() {
+    return Object.reduce((acc, id) => {
+      return acc + productsInCart.value;
+    }, 0)
+  }
+
   const priceFinal =  computed(() => priceTotal.value )
   const size = computed(() => productsInCart.value.length )
 

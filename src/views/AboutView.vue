@@ -29,7 +29,7 @@ const handleObjetivos = () => {
         <div class="w-full h-auto block md:flex justify-center items-center">
             <div class="w-full md:w-2/6 flex flex-col justify-center items-center border-b-4 md:border-b-0 md:border-r-4 border-white py-4">
               <p class="text-3xl">Angel Nicolas Jimenez</p>
-              <p class="text-xl">Front end Developer</p>
+              <p class="text-xl">Frontend Developer</p>
             </div>
             <div class="w-full h-auto md:w-4/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:m-4 my-4 px-2">
                 <div>

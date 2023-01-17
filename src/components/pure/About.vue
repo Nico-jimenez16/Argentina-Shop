@@ -13,32 +13,36 @@ import { Icon } from '@iconify/vue';
                         </div> 
                     </div></td>
                     <td><div class="circulo n2">
-                        <div class="absolute w-full h-full flex justify-center items-center">
-                            <h1 class="text-xl font-bold text-black z-20">E-Commerce</h1>
-                            <Icon class="w-1/3 h-1/3 absolute top-5 object-cover z-15" icon="logos:react" />
-                        </div>
+                        <a href="https://e-commerse-react.vercel.app/" target="_blank" rel="noreferrer" class="absolute w-full h-full flex justify-center items-center">
+                            <h1 class="text-xl bg-white/50 font-bold text-black z-50">E-Commerce</h1>
+                            <Icon class="w-1/3 h-1/3 absolute top-5 object-cover z-50" icon="logos:react" />
+                            <!-- <img class="absolute w-full h-full opacity-50 overflow-hidden object-cover rounded-full" src="../../assets/E-commerce-React.jpg" alt="EcommerceReact"> -->
+                        </a>
                     </div></td>
                 </tr>
                 <tr>
                     <td><div class="circulo n3">
-                        <div class="absolute w-full h-full flex justify-center items-center">
-                            <h1 class="text-xl font-bold z-15">Backend</h1>
-                            <Icon class="w-1/3 h-1/3 absolute top-5 object-cover z-15" icon="logos:nodejs" />
-                        </div>
+                        <a href="https://github.com/Nico-jimenez16/backend-e-commerce-react" target="_blank" rel="noreferrer" class="absolute w-full h-full flex justify-center items-center">
+                            <h1 class="text-xl bg-white/50 font-bold z-50">Backend</h1>
+                            <Icon class="w-1/3 h-1/3 absolute top-5 object-cover z-50" icon="logos:nodejs" />
+                            <!-- <img class="absolute w-full h-full opacity-50 overflow-hidden object-cover rounded-full" src="../../assets/Backend.png" alt=""> -->
+                        </a>
                     </div></td>
                     <td><div class="circulo n4">
-                        <div class="absolute w-full h-full flex justify-center items-center">
-                            <h1 class="text-xl font-bold z-20">E- Commerce</h1>
-                            <Icon class="w-1/3 h-1/3 absolute top-5 object-cover z-15" icon="logos:vue" />
-                        </div>
+                        <a href="https://e-commerce-vuejs.vercel.app/#/" target="_blank" rel="noreferrer" class="absolute w-full h-full flex justify-center items-center">
+                            <h1 class="text-xl bg-white/50 font-bold z-50">E-Commerce</h1>
+                            <Icon class="w-1/3 h-1/3 absolute top-5 object-cover z-50" icon="logos:vue" />
+                            <!-- <img class="absolute w-full h-full opacity-50 overflow-hidden object-cover rounded-full" src="../../assets/E-commerceVue.jpg" alt=""> -->
+                        </a>
                     </div></td>
                 </tr>
                 <tr>
                     <td><div class="circulo n5">
-                        <div class="absolute w-full h-full flex justify-center items-center">
-                            <h1 class="text-xl font-bold z-20">Argentina Shop</h1>
-                            <Icon class="w-1/3 h-1/3 absolute top-5 object-cover z-15" icon="logos:vitejs" />
-                        </div>
+                        <a href="https://argentina-shop.vercel.app/" target="_blank" rel="noreferrer" class="absolute w-full h-full flex justify-center items-center">
+                            <h1 class="text-xl bg-white/50 font-bold z-50">Argentina Shop</h1>
+                            <Icon class="w-1/3 h-1/3 absolute top-5 object-cover z-50" icon="logos:vitejs" />
+                            <!-- <img class="absolute w-full h-full opacity-50 object-cover rounded-full" src="../../assets/campeonesdelmundo.webp" alt="ArgentinaShop"> -->
+                        </a>
                     </div></td>
                 </tr>
             </table>
@@ -67,7 +71,6 @@ import { Icon } from '@iconify/vue';
         border-radius: 50%;
         margin: 0px 10px 0px 10px;
         position: relative;
-        /* background: rgb(238, 207, 207); */
         animation: rotar 50s infinite linear;
     }
 }
