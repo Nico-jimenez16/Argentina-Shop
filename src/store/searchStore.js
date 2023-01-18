@@ -1,12 +1,21 @@
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useProductsStore } from './productsStore'
 import { defineStore } from 'pinia'
 
 export const useSearchStore = defineStore('search', () => {
+  const { products } = useProductsStore()
   const search = ref('')
 
-  function searching(value){
-    search.value = value
+  const searching = (valor) => {
+    search.value = valor
   }
 
-  return { search, searching }
+  const filterProducts = ref(null)
+  filterProducts.value = computed (() => {
+    return products.filter((product) => {
+        return product.title.toLowerCase().includes(search.value.toLowerCase())
+    });
+  });
+
+  return { searching, filterProducts }
 })

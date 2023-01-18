@@ -10,8 +10,7 @@ defineProps({
 
 <template>  
     <div v-for="(obj, index) of products"
-        :key="index"
-        :class="obj.featured ? '' : '' " 
+        :key="index" 
         class="w-full h-70"
     >
             <Product 

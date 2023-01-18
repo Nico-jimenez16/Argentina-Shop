@@ -1,4 +1,5 @@
 <script setup>
+import { watchEffect, watch } from 'vue';
 import IndexCart from '../components/container/IndexCart.vue';
 import PurchaseDetail from '../components/pure/PurchaseDetail.vue'
 

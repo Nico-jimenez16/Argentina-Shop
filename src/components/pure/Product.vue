@@ -18,7 +18,7 @@ const { addProductFavorite, isFavorite } = useFavoriteStore()
         <div class="relative w-full h-70 md:h-70">
             <img :src="obj.image" class="w-full h-full min-h-70" alt="argentina">
             <div class="absolute w-1/3 h-auto bottom-0 bg-white p-1 ml-2">
-                <h2>{{ obj.price }}</h2>
+                <h2>$ {{ obj.price }}</h2>
             </div>
         </div>
         <div class="w-full h-auto lg:h-10 p-2">
@@ -40,14 +40,3 @@ const { addProductFavorite, isFavorite } = useFavoriteStore()
         </div>
     </div>
 </template>
-
-
-
-<style scoped>
-
-.featured{
-    column-span: 2;
-}
-
-
-</style>
