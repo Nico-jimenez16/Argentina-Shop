@@ -1,26 +1,34 @@
-import { ref , computed, watchEffect } from 'vue'
+import { ref , computed } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useCartStore = defineStore('cart', () => {
+
+   ///////////////
+  // STATE //
+  ////////////
   const productsInCart = ref([])
-  const priceTotal = ref(0)
+
+
+   ///////////////
+  // GETTERS //
+  ////////////
 
   // Devuelve el price total del carrito
-  const priceFinal = computed(() => priceTotal.value )
-
-  watchEffect(() => {
-    // recorre los productos del array y calcula el precio final 
-    const calcularPrice = () => {
-      priceTotal.value = 0
-      return productsInCart.value.forEach((element) => {
-        priceTotal.value += parseFloat( element.price )
-      })
-    }
-    calcularPrice()
-  })
+  const priceTotal = computed(() => {
+    let total = 0
+    productsInCart.value.map((product) => {
+      total += parseInt(product.price)
+    })
+    return total
+  });
 
   // Devuelve la cantidad de productos en el carrito 
   const size = computed(() => productsInCart.value.length )
+
+
+  ///////////////
+  // ACTIONS //
+  ////////////
 
   // Devuelve si un producto esta en el carrito 
   const isInCart = (id) => {
@@ -40,5 +48,5 @@ export const useCartStore = defineStore('cart', () => {
     productsInCart.value.splice(Indexproduct , 1)
   }
 
-  return { productsInCart, priceTotal, addProductInCart, removeProductInCart, size, priceFinal, isInCart }
+  return { productsInCart, priceTotal, addProductInCart, removeProductInCart, size, isInCart }
 })

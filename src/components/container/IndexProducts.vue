@@ -8,10 +8,9 @@ defineProps({
 </script>
 
 
-<template>  
+<template>
     <div v-for="(obj, index) of products"
-        :key="index" 
-        class="w-full h-70"
+        :key="index"
     >
             <Product 
                 :obj="obj"

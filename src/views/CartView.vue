@@ -1,11 +1,12 @@
 <script setup>
-import { watchEffect, watch } from 'vue';
+import { computed } from 'vue';
 import IndexCart from '../components/container/IndexCart.vue';
 import PurchaseDetail from '../components/pure/PurchaseDetail.vue'
 
 import { useCartStore } from '../store/cartStore'
 
-const { size } = useCartStore()
+const storeCart = useCartStore()
+const size = computed(() => storeCart.size )
 
 </script>
 
@@ -24,10 +25,10 @@ const { size } = useCartStore()
                     <h1 class="text-2xl"> Empty Shopping Cart! </h1>
                 </div>
                 <div v-else class="w-full md:w-3/5 lg:w-2/3 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 p-0 md:p-2 lg:p-4">
-                    <IndexCart/>
+                    <IndexCart />
                 </div>
                 <div v-show="size !== 0" class="w-full md:w-2/5 lg:w-1/3 flex flex-wrap justify-center items-center">
-                    <PurchaseDetail/>
+                    <PurchaseDetail />
                 </div>
             </div>
         </div>
