@@ -2,10 +2,14 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useFavoriteStore = defineStore('favorite', () => {
+  // !STATE //
   const favoriteProducts = ref([])
 
+  // !GETTERS //
   const size = computed(() => favoriteProducts.value.length )
 
+  // !ACTIONS //
+  // devuelve si un producto es favorito no lo es.
   function isFavorite(id){
     const response = favoriteProducts.value.find((product) => product.id === id )
     if(response) return true
@@ -23,5 +27,11 @@ export const useFavoriteStore = defineStore('favorite', () => {
     favoriteProducts.value.splice(Indexproduct , 1)
   }
 
-  return { favoriteProducts, addProductFavorite, removeProductInFavorite, isFavorite, size }
+  return {
+    favoriteProducts, 
+    addProductFavorite, 
+    removeProductInFavorite, 
+    isFavorite, 
+    size 
+  }
 })

@@ -2,17 +2,10 @@ import { ref , computed } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useCartStore = defineStore('cart', () => {
-
-   ///////////////
-  // STATE //
-  ////////////
+  // !STATE //
   const productsInCart = ref([])
 
-
-   ///////////////
-  // GETTERS //
-  ////////////
-
+  // !GETTERS //
   // Devuelve el price total del carrito
   const priceTotal = computed(() => {
     let total = 0
@@ -25,11 +18,7 @@ export const useCartStore = defineStore('cart', () => {
   // Devuelve la cantidad de productos en el carrito 
   const size = computed(() => productsInCart.value.length )
 
-
-  ///////////////
-  // ACTIONS //
-  ////////////
-
+  // !ACTIONS //
   // Devuelve si un producto esta en el carrito 
   const isInCart = (id) => {
     const response = productsInCart.value.find((product) => product.id === id )
@@ -48,5 +37,19 @@ export const useCartStore = defineStore('cart', () => {
     productsInCart.value.splice(Indexproduct , 1)
   }
 
-  return { productsInCart, priceTotal, addProductInCart, removeProductInCart, size, isInCart }
+  // Elimina todos los productos del carrito
+  const removeAllProductsInCart = () => {
+    productsInCart.value = []
+  }
+
+  return {
+    productsInCart, 
+    priceTotal, 
+    addProductInCart, 
+    removeProductInCart,
+    removeAllProductsInCart,
+    size, 
+    isInCart 
+  }
+
 })

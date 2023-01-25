@@ -6,19 +6,24 @@ export const useSearchStore = defineStore('search', () => {
   // todos los productos
   const { products } = useProductsStore()
 
-  // estados globales del Search
+  // !STATE //
   const search = ref('')
   const filterProducts = ref(null)
 
-  const searching = (valor) => {
-    search.value = valor
-  }
-
+  // !GETTERS //
   filterProducts.value = computed (() => {
     return products.filter((product) => {
         return product.title.toLowerCase().includes(search.value.toLowerCase())
     });
   });
 
-  return { searching, filterProducts }
+  // !ACTIONS //
+  const searching = (valor) => {
+    search.value = valor
+  }
+
+  return {
+    searching, 
+    filterProducts 
+  }
 })

@@ -3,6 +3,10 @@ import { useCartStore } from '../../store/cartStore.js'
 
 const storeCart = useCartStore()
 
+const handleClearCard = () => {
+    storeCart.removeAllProductsInCart()
+}
+
 </script>
 
 
@@ -18,7 +22,7 @@ const storeCart = useCartStore()
             </div>
         </div>
         <div class="w-full flex flex-col justify-center items-center">
-            <router-link to="" class="w-full text-center bg-violet-500 p-4 rounded-md uppercase mb-2 text-white"> Finalizar Compra </router-link>
+            <router-link @click="handleClearCard" to="/" class="w-full text-center bg-violet-500 p-4 rounded-md uppercase mb-2 text-white"> Finalizar Compra </router-link>
             <router-link to="/shop" class="w-full text-center bg-violet-500 p-4 rounded-md uppercase mb-2 text-white"> Seguir explorando Productos </router-link>
         </div>
     </div>
