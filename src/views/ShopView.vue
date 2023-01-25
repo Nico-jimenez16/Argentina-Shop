@@ -17,7 +17,7 @@ const { filterProducts } = useSearchStore()
         <div class="w-full flex flex-col justify-center items-center mb-12">
             <div class="w-5/6 h-auto md:h-48 block md:flex justify-center items-center">
                 <div class="w-full md:w-1/2 mt-4 md:mt-0">
-                    <h1 class="text-4xl font-bold">Products</h1>
+                    <h1 class="text-4xl font-bold">Productos</h1>
                     <h3 class="w-full">Compra tus Productos Aqui! La mejor tienda con la selección de productos más grande en Argentina.</h3>
                 </div>
                 <div class="w-full md:w-1/2 my-4 md:mt-0 flex justify-center md:justify-end items-center">
@@ -28,7 +28,7 @@ const { filterProducts } = useSearchStore()
                 <Loading />
             </div>
             <div v-if="filterProducts.length === 0" class="w-full h-32 flex justify-center items-center">
-                <h1 class="text-2xl text-cyan-700"> not found Products ! </h1>
+                <h1 class="text-2xl text-cyan-700"> No se pudo encontrar Productos ! </h1>
             </div>
             <div v-else class="w-5/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1">
                 <IndexProducts 

@@ -11,7 +11,7 @@ import { Icon } from '@iconify/vue';
             <div class="w-2/3 md:w-1/2">
                 <router-link class="mx-1 uppercase" to="/">Home</router-link>
                 <router-link class="mx-2 uppercase" to="/shop">Shop</router-link>
-                <router-link class="mx-1 uppercase" to="/about">About me</router-link>
+                <router-link class="mx-1 uppercase" to="/about">About Me</router-link>
             </div>
             <div class="w-1/3 md:w-1/2 flex justify-end items-center">
                 <router-link to="/favorite" class="flex">
