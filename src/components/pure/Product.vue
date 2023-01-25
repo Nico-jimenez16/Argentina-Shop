@@ -18,7 +18,7 @@ const { addProductFavorite, isFavorite } = useFavoriteStore()
         <div class="relative w-full">
             <img :src="obj.image" class="w-full h-full min-h-70" alt="argentina">
             <div class="absolute w-1/3 h-auto bottom-0 bg-white p-1 ml-2">
-                <h2 class="text-center">$ {{ obj.price }}</h2>
+                <h2 class="ml-1">$ {{ obj.price }}</h2>
             </div>
         </div>
         <div class="w-full h-10 flex justify-start items-center p-1">

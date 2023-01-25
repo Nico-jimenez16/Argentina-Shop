@@ -13,7 +13,7 @@ const storeCart = useCartStore()
         </div>
         <div class="w-full flex flex-col justify-center items-center">
             <div class="w-full flex justify-between items-center text-2xl p-4">
-                <h2>Price</h2>
+                <h2>Precio</h2>
                 <h2>$ {{ storeCart.priceTotal }} </h2>
             </div>
         </div>
