@@ -2,7 +2,7 @@
 import ProductInCart from '../pure/ProductInCart.vue';
 import { useCartStore } from '../../store/cartStore';
 
-const { productsInCart , getSizeProductInCart } = useCartStore()
+const { productsInCart } = useCartStore()
 
 </script>
 
